@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "Corbel Bold";
+  src: url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.eot");
+  src: url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c87f06ae40c78321844f2eac8b51737f.svg#Corbel Bold")
+      format("svg");
+}
+
+body {
+  font-family: "Corbel Bold";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 100vw;
+  background-color: #1f262c;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 144px 36px 144px;
+}
+
+.header-logo {
+  object-fit: contain;
+  width: 500px;
+}
+
+.header-contact {
+  padding: 24px;
+  background-color: #1f262c;
+  border: solid 2px #1f262c;
+  color: white;
+  border-radius: 8px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+}
+.menu-item {
+  text-align: center;
+  padding: 16px;
+  width: 25%;
+  background-color: #a32c30;
+  border-bottom: 3px solid #a32c30;
+}
+
+.banner {
+  position: relative;
+  height: 600px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 16px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%, -50%);
+  max-width: 1000px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.banner-school {
+  width: 800px;
+}
+
+.banner-course {
+  font-size: 20px;
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.745);
+  text-shadow: 0px 0px 10px white;
+}
+
+.desc-heading {
+  width: 60%;
+  margin: 144px 144px 0px 144px;
+  padding: 24px 64px 24px 24px;
+  background-color: #747f8a;
+  font-size: 40px;
+  color: white;
+  border-radius: 16px;
+}
+
+.desc-container {
+  display: flex;
+  gap: 24px;
+  padding: 48px 144px 48px 144px;
+  align-items: center;
+  color: white;
+}
+
+.desc-text {
+  padding-left: 24px;
+  font-size: 24px;
+}
+
+.click-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.click-box {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #a32c30;
+  padding: 24px 40px 24px 40px;
+  border: solid 2px #a32c30;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.media-section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background-image: url("/images/smcl_campus.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 64px 144px 64px 144px;
+}
+
+.media-img {
+  width: 50%;
+  border: white solid 5px;
+  max-width: 250px;
+}
+
+.media-embed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #1f262c;
+  padding: 24px;
+}
+
+.embed-text {
+  color: white;
+}
+
+.media-embed > iframe {
+  width: 400px;
+  height: 300px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 16px;
+  font-size: 12px;
+  color: white;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 250px;
+}
+
+.footer-block {
+  display: flex;
+  gap: 16px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.logo {
+  width: 30px;
+}
+
+.header-contact:hover {
+  background-color: white;
+  color: #1f262c;
+}
+
+.menu-item:hover {
+  border-bottom: 3px solid white;
+}
+
+.click-box:hover {
+  background-color: white;
+  color: #a32c30;
+}
+
+/*CONTACT.PHP*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 64px;
+  gap: 24px;
+}
+
+.contact-header {
+  color: white;
+  font-size: 32px;
+}
+
+.contact-school {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-box {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #7d8e9d;
+  background-color: white;
+  color: #1f262c;
+  padding: 24px;
+  gap: 16px;
+}
+
+.contact-school > .contact-box {
+  width: 300px;
+  height: 150px;
+  box-shadow: none;
+  border: #a32c30 solid 4px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contact-text {
+  color: #c90000;
+  border-bottom: #747f8a solid 1px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.contact-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.contact-map {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f262c;
+  padding: 64px 64px 24px 64px;
+  gap: 16px;
+}
+.contact-map > iframe {
+  width: 90vw;
+  height: 400px;
+}
+
+.directory-info {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+.divisions-container {
+  display: flex;
+  align-items: center;
+  gap: 144px;
+}
+.divisions-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/*ABOUT US*/
+.about-container {
+  display: flex;
+  gap: 64px;
+}
+
+.about-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+  background-color: #1f262c;
+  color: white;
+}
+
+.about-header {
+  font-size: 40px;
+  border-bottom: solid 1px #7d8e9d;
+}
+
+.about-box > iframe {
+  height: 360px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.song-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+  margin: 32px;
+}
+
+.about-subheading {
+  font-size: 24px;
+  width: 90%;
+
+  color: #1f262c;
+  padding: 8px 16px 8px 16px;
+  border-bottom: #747f8a solid 1px;
+  border-top: #747f8a solid 1px;
+}
+
+.song-text {
+  line-height: 2;
+}
+
+.song-box > iframe {
+  height: 190px;
+}
+
+.campus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.campus-box {
+  display: flex;
+  gap: 24px;
+}
+
+.campus-img {
+  width: 70%;
+}
+
+.legend-heading {
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+
+.legend-text {
+  display: flex;
+}
+
+.legend-text:before {
+  width: 25px;
+  height: 25px;
+
+  background: url("/images/sm_pin.png") no-repeat;
+  background-size: contain;
+
+  content: "";
+}
+
+/*ICS PROGRAMS*/
+.ics-header {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.ics-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 0 16px 16px 16px;
+}
+
+.ics-subheading {
+  font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ics-indent {
+  padding: 0 24px 0 24px;
+  line-height: 1.8;
+  width: 90%;
+}
+
+.ics-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 72px;
+}
+
+.ics-infobox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ics-info {
+  display: flex;
+  gap: 8px;
+}
+
+.ics-image {
+  width: 400px;
+}
+
+.blue-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f262c;
+  color: white;
+  padding: 48px;
+  gap: 24px;
+}
+
+.bluebox-heading {
+  width: 40%;
+  padding: 8px;
+  background-color: #747f8a;
+  font-size: 32px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.blue-box > .ics-text > .ics-subheading {
+  line-height: 1.8;
+}
+
+.small-box {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #7d8e9d;
+  background-color: white;
+  color: #1f262c;
+  padding: 24px;
+  gap: 16px;
+}
+
+.card > .ics-text > .ics-subheading {
+  color: #a32c30;
+}
